@@ -92,7 +92,7 @@ describe('API Pact test', () => {
           headers: {
             'Content-Type': regex({generate: 'application/json; charset=utf-8', matcher: 'application/json;?.*'}),
           },
-          body: eachLike(expectedProduct),
+          body: eachLike([]),
         },
       });
 
