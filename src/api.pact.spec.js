@@ -13,7 +13,7 @@ describe('API Pact test', () => {
   afterEach(() => mockProvider.verify());
   afterAll(() => mockProvider.finalize());
 
-  describe('retrieving a product', () => {
+  describe('retrieving a product to test', () => {
     test('ID 10 exists', async () => {
       // Arrange
       const expectedProduct = { id: '10', type: 'CREDIT_CARD', name: '28 Degrees'}
